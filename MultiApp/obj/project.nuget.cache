@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "o9jpcIiQWWR0aJ4AfRlEHZHdZWPUtkFjlcNGSdlDMv1fg1XlYFs5Sm8PzduCkgEczZgjHxfRGdHXn7VmBQOqcA==",
+  "success": true,
+  "projectFilePath": "E:\\MultiApp\\MultiApp\\MultiApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\khalid.ansari\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\khalid.ansari\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
