@@ -27,6 +27,7 @@ jobs:
       - name: Publish .NET
         shell: cmd
         run: |
+          cd MultiApp
           dotnet publish -c Release -o .\myapp
 
           
