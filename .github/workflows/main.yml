@@ -1,0 +1,32 @@
+name: ci/cd-pipeline
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      
+      - name: Setup .Net
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Build with .NET
+        shell: cmd
+        run: |
+          cd MultiApp
+          dotnet build --configuration Release
+      
+      - name: Publish .NET
+        shell: cmd
+        run: |
+          dotnet publish -c Release -o .\myapp
+
+          
